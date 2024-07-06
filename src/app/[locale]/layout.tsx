@@ -1,8 +1,50 @@
+import { getTranslations } from "next-intl/server";
+
 /* SEO */
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-	metadataBase: new URL(process.env.URL as string)
-};
+export async function generateMetadata({ params: { locale }}: { params: { locale: string }}): Promise<Metadata> {
+	const t = await getTranslations({ locale, namespace: "Main.Metadata" });
+	
+	return {
+		metadataBase: new URL(process.env.URL as string),
+		title: {
+			template: "%s | " + t("title"),
+			default: t("title")
+		},
+		description: t("description"),
+		keywords: t("keywords"),
+		category: "portfolio",
+		alternates: {
+			canonical: "/",
+			languages: {
+				"en": "/en",
+				"es": "/es"
+			}
+		},
+		openGraph: {
+			url: process.env.URL + "/" + locale,
+			locale: locale,
+			type: "website",
+			siteName: t("title"),
+			title: t("title"),
+			description: t("description"),
+			images: [{ url: "/logo.webp", width: 1024, height: 1024, alt: "Jaro.c Logo - 1024" }]
+		},
+		robots: {
+			index: true,
+			follow: true,
+			nocache: false
+		},
+		icons: {
+			icon: "/favicon.ico",
+			apple: "/apple-touch-icon.png",
+			other: {
+				rel: "apple-touch-icon-precomposed",
+				url: "/apple-touch-icon.png"
+			}
+		}
+	};
+}
 
 /* FONT */
 import { Poppins } from "next/font/google";
@@ -11,7 +53,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["100", "200", "300", "400
 /* Components */
 import "@/app/globals.css";
 
-export default function RootLayout({ children, params: { locale } }: { children: React.ReactNode, params: { locale: string } }) {
+export default function RootLayout({ children, params: { locale }}: { children: React.ReactNode; params: { locale: string }; }) {
 	return (
 		<html lang={locale}>
 			<body className={`${poppins.className} antialiased min-h-screen flex`}>
