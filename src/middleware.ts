@@ -1,5 +1,12 @@
-import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import createMiddleware from "next-intl/middleware";
+
+const intlMiddleware = createMiddleware({
+	locales: [ "en", "es" ],
+	defaultLocale: "en",
+	localeDetection: true,
+	localePrefix: "as-needed"
+});
 
 function generateNonce() {
 	const array = new Uint8Array(30);
@@ -7,7 +14,7 @@ function generateNonce() {
 	return btoa(String.fromCharCode(...array));
 }
 
-export default function middleware(request: NextRequest) {
+export default async function middleware(request: NextRequest) {
 	const nonce = generateNonce();
 	const cspHeader = `
 		default-src 'self';
@@ -26,17 +33,8 @@ export default function middleware(request: NextRequest) {
 		frame-ancestors 'none';
 		upgrade-insecure-requests;`;
 
-	/* Client - Headers */
-	const requestHeaders = new Headers(request.headers);
-	requestHeaders.set("x-nonce", nonce);
-	requestHeaders.set("Content-Security-Policy", cspHeader.replace(/\s{2,}/g, " ").trim());
-
-	/* Server - Headers */
-	const response = NextResponse.next({
-		request: {
-			headers: requestHeaders,
-		},
-	});
+	/* Languages */
+	const response = intlMiddleware(request);
 
 	response.headers.set("Content-Security-Policy", cspHeader.replace(/\s{2,}/g, " ").trim());
 	response.headers.set("X-Content-Type-Options", "nosniff");
@@ -55,5 +53,5 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-	matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"]
+	matcher: ["/", "/(en|es)/:path*", "/((?!api|_next/static|_next/image|favicon.ico).*)"]
 };

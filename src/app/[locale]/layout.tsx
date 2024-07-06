@@ -11,9 +11,9 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["100", "200", "300", "400
 /* Components */
 import "@/app/globals.css";
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children, params: { locale } }: { children: React.ReactNode, params: { locale: string } }) {
 	return (
-		<html lang="en">
+		<html lang={locale}>
 			<body className={`${poppins.className} antialiased min-h-screen flex`}>
 				<main className="flex-grow">{children}</main>
 			</body>
