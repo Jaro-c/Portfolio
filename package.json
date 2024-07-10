@@ -2,6 +2,10 @@
   "name": "jaroc-portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Jaro.c",
+    "url": "https://github.com/Jaro-c"
+  },
   "scripts": {
     "dev": "next dev -p 3010",
     "build": "next build",
