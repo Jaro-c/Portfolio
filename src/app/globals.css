@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body::-webkit-scrollbar {
+html {
+	scroll-behavior: smooth;
+	background: linear-gradient(to bottom, #191A1E 0%, #000 100vh, #000 100%);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
 	width: 6px;
 }
 
-body::-webkit-scrollbar-track {
+.custom-scrollbar::-webkit-scrollbar-track {
 	background: #191A1E;
 }
 
-body::-webkit-scrollbar-thumb {
+.custom-scrollbar::-webkit-scrollbar-thumb {
 	background-color: #888;
-}
-
-body {
-	background: linear-gradient(to bottom, #191A1E 0%, #000 100vh, #000 100%);
 }
