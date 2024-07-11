@@ -2,8 +2,14 @@
 	"Main": {
 		"Metadata": {
 			"title": "Jaro.c",
-			"description": "Bienvenido al portafolio de Jaro.c. Descubre mis proyectos y habilidades.",
+			"description": "Bienvenido al portafolio de Jaro.c. Soy un desarrollador web y backend apasionado con experiencia en Go, Next.js, Node.js, Python y Express. Desde 2024, me he expandido al desarrollo web, trabajando en proyectos freelance de scraping web y mensajería automatizada. Mis habilidades también incluyen MongoDB, PostgreSQL, MySQL, Git, JavaScript, HTML y TailwindCSS. Explora mis proyectos para ver soluciones innovadoras en acción.",
 			"keywords": "portafolio,Jaro.c,desarrollador web,desarrollador backend,Next.js,Go,Node.js,Python,Express"
+		},
+		"Sections": {
+			"Main": {
+				"Name": "¡Hola! Soy ",
+				"Carousel": "Administrador de Bases de Datos,Desarrollador Backend,Ingeniero de Software,Ingeniero DevOps,Desarrollador Frontend"
+			}
 		}
 	}
 }
