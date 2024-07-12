@@ -8,6 +8,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			colors: {
+				secondary: "#E3E9FF"
+			},
 			screens: {
 				sm: "100%",
 				md: "768px",
@@ -36,7 +39,7 @@ const config: Config = {
 			}
 		}
 	},
-	plugins: [],
+	plugins: []
 };
 
 export default config;

@@ -6,9 +6,5 @@ const Names = dynamic(() => import("@/components/main/section_1/client/name_clie
 export default function Name() {
 	const t = useTranslations("Main.Sections.Main");
 
-	return (
-		<div className="text-white">
-			<h1 className="text-[1rem] md:text-[2rem]">{t("Name")}<Names /></h1>
-		</div>
-	);
+	return <h1 className="text-secondary text-[1rem] md:text-[2rem]">{t("Name")}<Names /></h1>;
 }
