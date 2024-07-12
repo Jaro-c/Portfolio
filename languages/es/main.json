@@ -8,7 +8,12 @@
 		"Sections": {
 			"Main": {
 				"Name": "¡Hola 👋! Soy ",
-				"Carousel": "Administrador de Bases de Datos,Desarrollador Backend,Ingeniero de Software,Ingeniero DevOps,Desarrollador Frontend"
+				"Carousel": "Administrador de Bases de Datos,Desarrollador Backend,Ingeniero de Software,Ingeniero DevOps,Desarrollador Frontend",
+				"Contact": "Contáctame",
+				"Status": {
+					"On": "Disponible para trabajar",
+					"Off": "No disponible"
+				}
 			}
 		}
 	}

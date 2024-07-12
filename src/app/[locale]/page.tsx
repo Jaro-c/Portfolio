@@ -10,7 +10,7 @@ export default function Home() {
 		<div className="custom-scrollbar snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth">
 			{/* Main - #1 */}
 			<section className="w-full h-full snap-start snap-always flex flex-col items-center">
-				<div className="container h-full flex flex-col items-center justify-center space-y-[2rem]">
+				<div className="container h-full flex flex-col items-center justify-center space-y-[4rem]">
 					<Sc1_Name />
 					<Sc1_Carousel />
 					<Sc1_More />

@@ -8,7 +8,12 @@
 		"Sections": {
 			"Main": {
 				"Name": "Hi 👋! I'm ",
-				"Carousel": "Database Administrator,Backend Developer,Software Engineer,DevOps Engineer,Frontend Developer"
+				"Carousel": "Database Administrator,Backend Developer,Software Engineer,DevOps Engineer,Frontend Developer",
+				"Contact": "Contact Me",
+				"Status": {
+					"On": "Available to work",
+					"Off": "Not available"
+				}
 			}
 		}
 	}
