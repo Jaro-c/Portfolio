@@ -24,7 +24,7 @@ export default function Home() {
 				</div>
 
 				<Link href="#about" className="mb-[4rem] animate-bounce">
-					<svg className="rotate-90 fill-gray-500 w-[1rem] h-[1rem] md:w-[2rem] md:h-[2rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<svg className="rotate-90 fill-gray-500 hover:fill-secondary w-[1rem] h-[1rem] md:w-[2rem] md:h-[2rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 						<path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/>
 					</svg>
 				</Link>
@@ -40,13 +40,18 @@ export default function Home() {
 			<section className="w-full h-full snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
 				<SectionTitle title={t("Skills.title")} />
 
-				<div>
-
-				</div>
+				<div></div>
 			</section>
 
-			{/* Contact - #4 */}
-			<section id="contact" className="w-full h-full snap-start snap-always">
+			{/* Projects - #4 */}
+			<section className="w-full h-full snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
+				<SectionTitle title={t("Projects.title")} />
+				<p className="text-secondary opacity-80">This section is still under construction...</p>
+			</section>
+
+			{/* Contact - #5 */}
+			<section id="contact" className="w-full h-full snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
+				<SectionTitle title={t("Contact.title")} />
 			</section>
 		</div>
 	);
