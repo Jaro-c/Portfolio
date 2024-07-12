@@ -2,7 +2,7 @@
 	"Main": {
 		"Metadata": {
 			"title": "Jaro.c",
-			"description": "Welcome to Jaro.c's portfolio. I'm a passionate web and backend developer with experience in Go, Next.js, Node.js, Python, and Express. Since 2024, I've expanded into web development, working on freelance projects involving web scraping and automated messaging. My skills also include MongoDB, PostgreSQL, MySQL, Git, JavaScript, HTML, and TailwindCSS. Explore my projects to see innovative solutions in action.",
+			"description": "Welcome to Jaro.c portfolio. I'm a passionate web and backend developer with experience in Go, Next.js, Node.js, Python, and Express. I've worked on freelance projects involving web scraping and automated messaging. Since 2024, I've expanded my skills in frontend development and continue to learn new technologies. I also work with MongoDB, PostgreSQL, MySQL, Git, JavaScript, HTML, and TailwindCSS. Explore my projects to see innovative solutions in action.",
 			"keywords": "portfolio,Jaro.c,web developer,backend developer,Next.js,Go,Node.js,Python,Express"
 		},
 		"Sections": {
@@ -14,6 +14,16 @@
 					"On": "Available to work",
 					"Off": "Not available"
 				}
+			},
+			"About": {
+				"title": "About Me",
+				"description": "I'm <name>Alejandro Rodriguez</name>, but you can call me <name>Jaro.c</name>, a name derived from my initials. My passion for technology began with Python, which sparked my love for backend development. Since then, I have explored and mastered various areas of web development, always seeking new technologies and languages to enhance my skills.\n\nI enjoy both backend and frontend development, as well as server and database management. This versatility allows me to tackle projects holistically, ensuring every aspect of development is carefully managed and optimized. Since early 2024, I've expanded my horizons to include frontend development and incorporated tools like Next.js and intriguing backend languages like Go into my repertoire.\n\nI've worked on freelance projects ranging from web scraping to automated messaging, always seeking innovative and efficient solutions. I love facing new challenges and constantly learning, which allows me to quickly adapt to the ever-changing needs of technological development."
+			},
+			"Skills": {
+				"title": ""
+			},
+			"Contact": {
+				"title": ""
 			}
 		}
 	}
