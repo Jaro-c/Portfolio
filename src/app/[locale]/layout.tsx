@@ -30,7 +30,7 @@ export async function generateMetadata({ params: { locale }}: { params: { locale
 			siteName: t("title"),
 			title: t("title"),
 			description: t("description"),
-			images: [{ url: "/logo.webp", width: 1024, height: 1024, alt: "Jaro.c Logo - 1024" }]
+			images: [{ url: "/background.png", width: 1024, height: 1024, alt: "Jaro.c Logo - 1024" }]
 		},
 		robots: {
 			index: true,
