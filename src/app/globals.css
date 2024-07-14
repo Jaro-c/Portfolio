@@ -18,3 +18,11 @@ html {
 .custom-scrollbar::-webkit-scrollbar-thumb {
 	background-color: #888;
 }
+
+.no-select {
+	-webkit-user-drag: none;
+    -webkit-user-select: none;
+	-moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
