@@ -20,10 +20,20 @@
 				"description": "I'm <name>Alejandro Rodriguez</name>, but you can call me <name>Jaro.c</name>, a name derived from my initials. My passion for technology began with Python, which sparked my love for backend development. Since then, I have explored and mastered various areas of web development, always seeking new technologies and languages to enhance my skills.\n\nI enjoy both backend and frontend development, as well as server and database management. This versatility allows me to tackle projects holistically, ensuring every aspect of development is carefully managed and optimized. Since early 2024, I've expanded my horizons to include frontend development and incorporated tools like Next.js and intriguing backend languages like Go into my repertoire.\n\nI've worked on freelance projects ranging from web scraping to automated messaging, always seeking innovative and efficient solutions. I love facing new challenges and constantly learning, which allows me to quickly adapt to the ever-changing needs of technological development."
 			},
 			"Skills": {
-				"title": ""
+				"title": "Hard Skills",
+				"skills": {
+					"Languages": "Programming Languages",
+					"Styling": "Markup and Styling",
+					"Frameworks": "Frameworks and Libraries",
+					"Databases": "Databases",
+					"Tools": "Tools and Platforms"
+				}
+			},
+			"Projects": {
+				"title": "Projects"
 			},
 			"Contact": {
-				"title": ""
+				"title": "Contact Me"
 			}
 		}
 	}

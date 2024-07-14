@@ -55,6 +55,6 @@ export default async function middleware(request: NextRequest) {
 export const config = {
 	matcher: [
 		"/", "/(en|es)/:path*",
-		"/((?!api|_next/static|_next/image|favicon.ico|robots.txt|manifest.webmanifest|.*\\.webp|.*\\.png).*)"
+		"/((?!api|_next/static|_next/image|favicon.ico|robots.txt|manifest.webmanifest|skills|.*\\.webp|.*\\.png).*)"
 	]
 };

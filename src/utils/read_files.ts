@@ -13,3 +13,14 @@ export async function getSocial() {
 		return false;
 	}
 }
+
+export async function getSkills() {
+	const skillPath = path.join(process.cwd(), "src", "libs", "skills.json");
+
+	try {
+		const file = await fs.readFile(skillPath, "utf-8");
+		return JSON.parse(file);
+	} catch (error) {
+		return false;
+	}
+}

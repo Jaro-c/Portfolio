@@ -10,13 +10,15 @@ const Sc1_More = dynamic(() => import("@/components/main/section_1/more"));
 
 const Sc2_About = dynamic(() => import("@/components/main/section_2/main"));
 
+const Sc3_Skills = dynamic(() => import("@/components/main/section_3/main"));
+
 export default function Home() {
 	const t = useTranslations("Main.Sections");
 
 	return (
 		<div className="custom-scrollbar snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth">
 			{/* Main - #1 */}
-			<section className="w-full h-full snap-start snap-always flex flex-col items-center">
+			<section className="w-full h-screen snap-start snap-always flex flex-col items-center">
 				<div className="container h-full flex flex-col items-center justify-center space-y-[4rem]">
 					<Sc1_Name />
 					<Sc1_Carousel />
@@ -31,27 +33,28 @@ export default function Home() {
 			</section>
 
 			{/* About Me - #2 */}
-			<section id="about" className="w-full h-full snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
+			<section id="about" className="w-full h-screen snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
 				<SectionTitle title={t("About.title")} />
 				<Sc2_About />
 			</section>
 
 			{/* Hard Skills - #3 */}
-			<section className="w-full h-full snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
+			<section className="w-full h-screen snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
 				<SectionTitle title={t("Skills.title")} />
-
-				<div></div>
+				<Sc3_Skills />
 			</section>
 
 			{/* Projects - #4 */}
-			<section className="w-full h-full snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
+			<section className="w-full h-screen snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
 				<SectionTitle title={t("Projects.title")} />
 				<p className="text-secondary opacity-80">This section is still under construction...</p>
 			</section>
 
 			{/* Contact - #5 */}
-			<section id="contact" className="w-full h-full snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
+			<section id="contact" className="w-full h-screen snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
 				<SectionTitle title={t("Contact.title")} />
+
+				<div></div>
 			</section>
 		</div>
 	);

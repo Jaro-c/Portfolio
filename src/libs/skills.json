@@ -1,0 +1,116 @@
+{
+	"Languages": [
+		{
+			"name": "Go",
+			"url": "/skills/go.svg"
+		},
+		{
+			"name": "JavaScript",
+			"url": "/skills/javascript.svg"
+		},
+		{
+			"name": "Python",
+			"url": "/skills/python.svg"
+		},
+		{
+			"name": "TypeScript",
+			"url": "/skills/typescript.svg"
+		}
+	],
+	"Styling": [
+		{
+			"name": "HTML 5",
+			"url": "/skills/html5.svg"
+		},
+		{
+			"name": "CSS3",
+			"url": "/skills/css3.svg"
+		}
+	],
+	"Frameworks": [
+		{
+			"name": "Next.js",
+			"url": "/skills/nextjs.svg"
+		},
+		{
+			"name": "Express",
+			"url": "/skills/express.svg"
+		},
+		{
+			"name": "Node.js",
+			"url": "/skills/nodejs.svg"
+		},
+		{
+			"name": "React",
+			"url": "/skills/react.svg"
+		},
+		{
+			"name": "TailwindCSS",
+			"url": "/skills/tailwindcss.svg"
+		}
+	],
+	"Databases": [
+		{
+			"name": "MongoDB",
+			"url": "/skills/mongodb.svg"
+		},
+		{
+			"name": "PostgreSQL",
+			"url": "/skills/postgresql.svg"
+		},
+		{
+			"name": "MySQL",
+			"url": "/skills/mysql.svg"
+		}
+	],
+	"Tools": [
+		{
+			"name": "Git",
+			"url": "/skills/git.svg"
+		},
+		{
+			"name": "Termius",
+			"url": "/skills/termius.svg"
+		},
+		{
+			"name": "Postman",
+			"url": "/skills/postman.svg"
+		},
+		{
+			"name": "Linux",
+			"url": "/skills/linux.svg"
+		},
+		{
+			"name": "Ubuntu",
+			"url": "/skills/ubuntu.svg"
+		},
+		{
+			"name": "Debian",
+			"url": "/skills/debian.svg"
+		},
+		{
+			"name": "Bitvise",
+			"url": "/skills/bitvise.svg"
+		},
+		{
+			"name": "Nginx",
+			"url": "/skills/nginx.svg"
+		},
+		{
+			"name": "Docker",
+			"url": "/skills/docker.svg"
+		},
+		{
+			"name": "WordPress",
+			"url": "/skills/wordpress.svg"
+		},
+		{
+			"name": "PM2",
+			"url": "/skills/pm2.svg"
+		},
+		{
+			"name": "HTTPie",
+			"url": "/skills/httpie.svg"
+		}
+	]
+}
