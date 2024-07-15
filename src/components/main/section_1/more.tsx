@@ -6,7 +6,7 @@ export default function More() {
 	const t = useTranslations("Main.Sections.Main");
 
 	return (
-		<div className="flex flex-col items-center space-y-[2rem]">
+		<div className="no-select flex flex-col items-center space-y-[2rem]">
 			<Link href="#contact" passHref>
 				<button className="border border-gray-500 rounded-full px-[4rem] py-[.8rem] transition-transform duration-300 ease-in-out hover:scale-110 hover:border-secondary">
 					<span className="text-gray-400 text-[1rem] lg:text-[1.2rem]">{t("Contact")}</span>
