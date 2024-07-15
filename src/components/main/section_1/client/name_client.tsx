@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export default function Names() {
-	const names = ["Alejandro R.", "Jaro.c"];
+	const names = useMemo(() => ["Alejandro R.", "Jaro.c"], []);
 	const typingSpeed = 100;
 	const changeInterval = 2 * 1000;
 
