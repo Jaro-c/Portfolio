@@ -45,7 +45,7 @@ export default function Home() {
 			</section>
 
 			{/* Projects - #4 */}
-			<section className="hidden w-full h-screen snap-start snap-always  flex-col justify-center items-center space-y-[4rem]">
+			<section className="w-full h-screen snap-start snap-always  flex-col justify-center items-center space-y-[4rem]">
 				<SectionTitle title={t("Projects.title")} />
 				<p className="text-secondary opacity-80">This section is still under construction...</p>
 			</section>
