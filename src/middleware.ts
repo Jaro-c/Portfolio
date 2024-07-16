@@ -24,7 +24,7 @@ export default async function middleware(request: NextRequest) {
 		script-src-attr 'self' 'nonce-${nonce}' 'strict-dynamic';
 		style-src 'self' 'nonce-${nonce}';
 		style-src-elem 'self' 'nonce-${nonce}';
-		style-src-attr 'self' 'nonce-${nonce}';
+		style-src-attr 'self' 'unsafe-inline';
 		img-src 'self' blob: data:;
 		font-src 'self';
 		object-src 'none';
