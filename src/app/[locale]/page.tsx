@@ -9,8 +9,8 @@ const Sc1_Carousel = dynamic(() => import("@/components/main/section_1/carousel"
 const Sc1_More = dynamic(() => import("@/components/main/section_1/more"));
 
 const Sc2_About = dynamic(() => import("@/components/main/section_2/main"));
-
 const Sc3_Skills = dynamic(() => import("@/components/main/section_3/main"));
+const Sc5_Contact = dynamic(() => import("@/components/main/section_5/main"));
 
 export default function Home() {
 	const t = useTranslations("Main.Sections");
@@ -45,7 +45,7 @@ export default function Home() {
 			</section>
 
 			{/* Projects - #4 */}
-			<section className="w-full h-screen snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
+			<section className="hidden w-full h-screen snap-start snap-always  flex-col justify-center items-center space-y-[4rem]">
 				<SectionTitle title={t("Projects.title")} />
 				<p className="text-secondary opacity-80">This section is still under construction...</p>
 			</section>
@@ -53,8 +53,7 @@ export default function Home() {
 			{/* Contact - #5 */}
 			<section id="contact" className="w-full h-screen snap-start snap-always flex flex-col justify-center items-center space-y-[4rem]">
 				<SectionTitle title={t("Contact.title")} />
-
-				<div></div>
+				<Sc5_Contact />
 			</section>
 		</div>
 	);
