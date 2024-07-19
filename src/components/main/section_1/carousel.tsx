@@ -30,7 +30,7 @@ export default function Carousel() {
 			<div className="relative h-[4rem] md:h-[8rem] xl:h-[11.5rem]">
 				{text.map((item, index) => (
 					<div key={uuidv4()} className={`absolute w-full h-full flex justify-center items-center opacity-0 ${index === currentIndex ? style["slide-in"] : index === prevIndex ? style["slide-out"] : ""}`}>
-						<h2 className={`no-select text-center leading-none text-[2rem] md:text-[4rem] xl:text-[6rem] font-bold bg-gradient-to-b from-gray-50 to-gray-700 bg-clip-text text-transparent py-[1rem]`}>{item}</h2>
+						<h2 className={`no-select container text-center leading-none text-[2rem] md:text-[4rem] xl:text-[6rem] font-bold bg-gradient-to-b from-gray-50 to-gray-700 bg-clip-text text-transparent py-[1rem]`}>{item}</h2>
 					</div>
 				))}
 			</div>
