@@ -17,7 +17,7 @@ export default function Lang() {
 
 	return (
 		<button className="flex" onClick={switchLocale}>
-			<Image className="opacity-50 transition-opacity ease-in-out duration-300 hover:opacity-100" src="/lang.svg" width={24} height={24} alt="Change language" />
+			<Image className="no-select opacity-50 transition-opacity ease-in-out duration-300 hover:opacity-100" src="/lang.svg" width={24} height={24} alt="Change language" />
 		</button>
 	);
 }
