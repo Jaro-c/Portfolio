@@ -9,6 +9,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
+				primary: "#36373C",
 				secondary: "#E3E9FF"
 			},
 			screens: {

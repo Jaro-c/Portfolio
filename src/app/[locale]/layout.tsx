@@ -55,6 +55,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["100", "200", "300", "400
 /* Components */
 import "@/app/globals.css";
 const Social = dynamic(() => import("@/components/social/main"));
+const Header = dynamic(() => import("@/components/header/main"));
 
 export default async function RootLayout({ children, params: { locale }}: { children: React.ReactNode; params: { locale: string }; }) {
 	const messages = await getMessages({ locale: locale });
@@ -62,6 +63,7 @@ export default async function RootLayout({ children, params: { locale }}: { chil
 	return (
 		<html lang={locale}>
 			<body className={`${poppins.className} antialiased min-h-screen flex`}>
+				<Header />
 				<NextIntlClientProvider locale={locale} messages={messages}>
 					<main className="flex-grow">{children}</main>
 				</NextIntlClientProvider>
