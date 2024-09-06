@@ -11,7 +11,7 @@ export default async function Hard_Skills() {
 	const skills = await getSkills();
 
 	return (
-		<div className="w-full flex flex-col items-center justify-center space-y-[1.5rem]">
+		<div className="w-full flex flex-col items-center justify-center space-y-[1rem] lg:space-y-[2rem]">
 			<div className="flex flex-col items-center justify-center space-y-[.6rem]">
 				<Title title={t("skills.Languages")} />
 				<Skills skills={skills.Languages} />
