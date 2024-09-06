@@ -9,6 +9,7 @@ export default getRequestConfig(async ({ locale }) => {
 	return {
 		messages: {
 			...(await import(`../languages/${locale}/main.json`)).default,
+			...(await import(`../languages/${locale}/NotFound.json`)).default,
 		},
 	};
 });

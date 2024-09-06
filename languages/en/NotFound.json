@@ -1,0 +1,6 @@
+{
+	"NotFound": {
+		"description": "Oops! The page you're looking for doesn't exist.",
+		"button": "Go back home"
+	}
+}
