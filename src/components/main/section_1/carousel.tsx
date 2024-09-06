@@ -34,7 +34,7 @@ export default function Carousel() {
 						className={`absolute w-full h-full flex justify-center items-center opacity-0 ${index === currentIndex ? style["slide-in"] : index === prevIndex ? style["slide-out"] : ""}`}
 					>
 						<h2
-							className={`no-select container text-center leading-none text-[2rem] md:text-[4rem] xl:text-[6rem] font-bold bg-gradient-to-b from-gray-50 to-gray-700 bg-clip-text text-transparent py-[1rem]`}
+							className={`select-none container text-center leading-none text-[2rem] md:text-[4rem] xl:text-[6rem] font-bold bg-gradient-to-b from-gray-50 to-gray-700 bg-clip-text text-transparent py-[1rem]`}
 						>
 							{item}
 						</h2>

@@ -20,9 +20,9 @@ html {
 }
 
 .no-select {
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	user-select: none;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* Edge */
+	-webkit-user-drag: none;
+	-moz-user-select: none; /* Firefox */
 }

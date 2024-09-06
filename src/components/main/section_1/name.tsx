@@ -7,7 +7,7 @@ export default function Name() {
 	const t = useTranslations("Main.Sections.Main");
 
 	return (
-		<h1 className="no-select text-secondary text-[1rem] md:text-[2rem]">
+		<h1 className="select-none text-secondary text-[1rem] md:text-[2rem]">
 			{t("Name")}
 			<Names />
 		</h1>
