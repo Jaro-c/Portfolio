@@ -2,10 +2,10 @@ import type { NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
 
 const intlMiddleware = createMiddleware({
-	locales: [ "en", "es" ],
+	locales: ["en", "es"],
 	defaultLocale: "en",
 	localeDetection: false,
-	localePrefix: "as-needed"
+	localePrefix: "as-needed",
 });
 
 function generateNonce() {
@@ -53,8 +53,5 @@ export default async function middleware(request: NextRequest) {
 }
 
 export const config = {
-	matcher: [
-		"/", "/(en|es)/:path*",
-		"/((?!api|_next/static|_next/image|favicon.ico|robots.txt|manifest.webmanifest|skills|.*\\.webp|.*\\.svg|.*\\.png).*)"
-	]
+	matcher: ["/", "/(en|es)/:path*", "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|manifest.webmanifest|skills|.*\\.webp|.*\\.svg|.*\\.png).*)"],
 };

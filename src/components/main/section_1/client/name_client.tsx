@@ -8,20 +8,20 @@ export default function Names() {
 	const changeInterval = 2 * 1000;
 
 	const [displayedText, setDisplayedText] = useState("");
-  	const [charIndex, setCharIndex] = useState(0);
-  	const [nameIndex, setNameIndex] = useState(0);
-  	const [isDeleting, setIsDeleting] = useState(false);
+	const [charIndex, setCharIndex] = useState(0);
+	const [nameIndex, setNameIndex] = useState(0);
+	const [isDeleting, setIsDeleting] = useState(false);
 
-  	useEffect(() => {
+	useEffect(() => {
 		const handleTyping = () => {
 			const currentName = names[nameIndex];
 
 			if (isDeleting) {
 				setDisplayedText(currentName.substring(0, charIndex - 1));
-				setCharIndex((prev) => prev - 1);
+				setCharIndex(prev => prev - 1);
 			} else {
 				setDisplayedText(currentName.substring(0, charIndex + 1));
-				setCharIndex((prev) => prev + 1);
+				setCharIndex(prev => prev + 1);
 			}
 		};
 
@@ -32,7 +32,7 @@ export default function Names() {
 
 		if (isDeleting && !charIndex) {
 			setIsDeleting(false);
-			setNameIndex((prevIndex) => (prevIndex + 1) % names.length);
+			setNameIndex(prevIndex => (prevIndex + 1) % names.length);
 		} else {
 			const timeoutId = setTimeout(handleTyping, typingSpeed);
 			return () => clearTimeout(timeoutId);
@@ -41,8 +41,8 @@ export default function Names() {
 
 	return (
 		<>
-		<span className="font-semibold">{displayedText}</span>
-		<span className="animate-pulse text-white font-extralight">|</span>
+			<span className="font-semibold">{displayedText}</span>
+			<span className="animate-pulse text-white font-extralight">|</span>
 		</>
 	);
 }

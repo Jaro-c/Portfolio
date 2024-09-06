@@ -4,11 +4,11 @@ This repository contains the source code for my personal portfolio developed wit
 
 ## Portfolio Features
 
-- **🚀 Modern Technologies**: Built with Next.js, React, and Tailwind CSS for a responsive and modern design.
-- **🖼️ Image Optimization**: Uses the `sharp` library to ensure images load quickly without losing quality.
-- **🔧 Clean and Maintainable Code**: Adheres to best coding practices with TypeScript and linting tools such as ESLint.
-- **✨ Interactivity**: Interactive elements enhance user experience as they explore my projects and skills.
-- **⚡ Performance Optimization**: Utilizes Next.js features like static site generation and server-side rendering for optimal performance.
+-   **🚀 Modern Technologies**: Built with Next.js, React, and Tailwind CSS for a responsive and modern design.
+-   **🖼️ Image Optimization**: Uses the `sharp` library to ensure images load quickly without losing quality.
+-   **🔧 Clean and Maintainable Code**: Adheres to best coding practices with TypeScript and linting tools such as ESLint.
+-   **✨ Interactivity**: Interactive elements enhance user experience as they explore my projects and skills.
+-   **⚡ Performance Optimization**: Utilizes Next.js features like static site generation and server-side rendering for optimal performance.
 
 ## Installation and Usage
 

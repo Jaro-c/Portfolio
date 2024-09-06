@@ -12,7 +12,7 @@ export default function AboutMe() {
 
 			<p className="lg:w-4/5 xl:w-3/5 2xl:w-2/5 text-secondary text-justify opacity-80 whitespace-pre-line">
 				{t.rich("description", {
-					name: (chunks) => <span className="font-semibold underline decoration-2">{chunks}</span>
+					name: chunks => <span className="font-semibold underline decoration-2">{chunks}</span>,
 				})}
 			</p>
 		</div>

@@ -11,12 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		return `${SITE}/${locale}${pathname === "/" ? "" : pathname}`;
 	}
 
-	return pathnames.map((pathname) => ({
+	return pathnames.map(pathname => ({
 		url: getURL(pathname, defaultLocale),
 		lastModified: new Date(),
 		priority: 1,
 		alternates: {
-			languages: Object.fromEntries(locales.map((locale) => [locale, getURL(pathname, locale)]))
-		}
+			languages: Object.fromEntries(locales.map(locale => [locale, getURL(pathname, locale)])),
+		},
 	}));
 }
