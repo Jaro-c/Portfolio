@@ -2,115 +2,119 @@
 	"Languages": [
 		{
 			"name": "Go",
-			"url": "/skills/go.svg"
+			"icon": "/skills/go.svg"
 		},
 		{
 			"name": "JavaScript",
-			"url": "/skills/javascript.svg"
+			"icon": "/skills/javascript.svg"
 		},
 		{
 			"name": "Python",
-			"url": "/skills/python.svg"
+			"icon": "/skills/python.svg"
 		},
 		{
 			"name": "TypeScript",
-			"url": "/skills/typescript.svg"
+			"icon": "/skills/typescript.svg"
 		}
 	],
 	"Styling": [
 		{
 			"name": "HTML 5",
-			"url": "/skills/html5.svg"
+			"icon": "/skills/html5.svg"
 		},
 		{
 			"name": "CSS3",
-			"url": "/skills/css3.svg"
+			"icon": "/skills/css3.svg"
 		}
 	],
 	"Frameworks": [
 		{
 			"name": "Next.js",
-			"url": "/skills/nextjs.svg"
+			"icon": "/skills/nextjs.svg"
 		},
 		{
 			"name": "Express",
-			"url": "/skills/express.svg"
+			"icon": "/skills/express.svg"
 		},
 		{
 			"name": "Node.js",
-			"url": "/skills/nodejs.svg"
+			"icon": "/skills/nodejs.svg"
 		},
 		{
 			"name": "React",
-			"url": "/skills/react.svg"
+			"icon": "/skills/react.svg"
 		},
 		{
 			"name": "TailwindCSS",
-			"url": "/skills/tailwindcss.svg"
+			"icon": "/skills/tailwindcss.svg"
+		},
+		{
+			"name": "NestJS",
+			"icon": "/skills/nestjs.svg"
 		}
 	],
 	"Databases": [
 		{
 			"name": "MongoDB",
-			"url": "/skills/mongodb.svg"
+			"icon": "/skills/mongodb.svg"
 		},
 		{
 			"name": "PostgreSQL",
-			"url": "/skills/postgresql.svg"
+			"icon": "/skills/postgresql.svg"
 		},
 		{
 			"name": "MySQL",
-			"url": "/skills/mysql.svg"
+			"icon": "/skills/mysql.svg"
 		}
 	],
 	"Tools": [
 		{
 			"name": "Git",
-			"url": "/skills/git.svg"
+			"icon": "/skills/git.svg"
 		},
 		{
 			"name": "Termius",
-			"url": "/skills/termius.svg"
+			"icon": "/skills/termius.svg"
 		},
 		{
 			"name": "Postman",
-			"url": "/skills/postman.svg"
+			"icon": "/skills/postman.svg"
 		},
 		{
 			"name": "Linux",
-			"url": "/skills/linux.svg"
+			"icon": "/skills/linux.svg"
 		},
 		{
 			"name": "Ubuntu",
-			"url": "/skills/ubuntu.svg"
+			"icon": "/skills/ubuntu.svg"
 		},
 		{
 			"name": "Debian",
-			"url": "/skills/debian.svg"
+			"icon": "/skills/debian.svg"
 		},
 		{
 			"name": "Bitvise",
-			"url": "/skills/bitvise.svg"
+			"icon": "/skills/bitvise.svg"
 		},
 		{
 			"name": "Nginx",
-			"url": "/skills/nginx.svg"
+			"icon": "/skills/nginx.svg"
 		},
 		{
 			"name": "Docker",
-			"url": "/skills/docker.svg"
+			"icon": "/skills/docker.svg"
 		},
 		{
 			"name": "WordPress",
-			"url": "/skills/wordpress.svg"
+			"icon": "/skills/wordpress.svg"
 		},
 		{
 			"name": "PM2",
-			"url": "/skills/pm2.svg"
+			"icon": "/skills/pm2.svg"
 		},
 		{
 			"name": "HTTPie",
-			"url": "/skills/httpie.svg"
+			"icon": "/skills/httpie.svg"
 		}
 	]
 }
