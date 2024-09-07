@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 
@@ -57,7 +58,7 @@ import "@/app/globals.css";
 const Social = dynamic(() => import("@/components/social/main"));
 const Header = dynamic(() => import("@/components/header/main"));
 
-export default async function RootLayout({ children, params: { locale } }: { children: React.ReactNode; params: { locale: string } }) {
+export default async function RootLayout({ children, params: { locale } }: { children: ReactNode; params: { locale: string } }) {
 	const messages = await getMessages({ locale: locale });
 
 	return (
